@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ignacio Peralta Zamar - CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/portafolio.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>CV</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+
+<body>
+    <div class="header">
+        <header>
+            <div class="logo">
+                <a href="#"></a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobreMi" onclick="seleccionar()">Sobre Mi</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="responsiveNav" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+        <div class="cvFoto">
+            <div class="div-img">
+                <img class="cv_foto" src="img/CVFoto.jpg" alt="">
+            </div>
+            <h1>Ignacio Peralta</h1>
+            <h2>Web Developer</h2>
+            <div class="redes">
+                <a href="https://github.com/nachozamar" target="_blank"><i class="fa-brands fa-github" target="_blank"></i></a>
+                <a href="https://twitter.com/nachozamar" target="_blank"><i class="fa-brands fa-twitter" target="_blank"></i></a>        
+                <a href="https://www.linkedin.com/in/ignaciozamar/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="sobreMi" class="sobreMi">
+        <div class="about">
+            <h2>Sobre Mí</h2>
+            <p>Este es un ejemplo de curriculum usando HTML, CSS, y Javascript.
+            Estoy empezando en el mundo del desarrollo web y mi meta es
+            conseguir un trabajo profesional como programador especializado en el
+            Frontend. </p>
+            <div class="fila">
+
+
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de Nacimiento</strong>
+                           26-09-1995
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +54 9 3541-588248
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            nacho.zamar@gmail.com
+                        </li>
+                        <li>
+                            <strong>Ciudad</strong>
+                            Villa Carlos Paz, Córdoba, Argentina.
+                        </li>
+                    </ul>
+                </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            
+            <h2>Contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <form id="contactoenviar">
+                        <input type="text" class="form-control" placeholder="Nombre..." name="nombre" required>
+
+                        <input type="number" class="form-control" placeholder="Teléfono..." name="numero" required>
+
+                        <input type="email" class="form-control" placeholder="E-mail..." name="email" required>
+
+                        <textarea type="text" class="form-control" cols="30" rows="3" placeholder="Mensaje..." name="mensaje" required></textarea>
+
+
+                        <button id="enviarmensaje">Enviar <i class="material-icons" style="font-size:23px">send</i>
+
+                        <span class="overlay"></span>
+                        </button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
